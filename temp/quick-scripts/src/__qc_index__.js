@@ -6,6 +6,7 @@ require('./assets/scripts/CookerLayout');
 require('./assets/scripts/Director');
 require('./assets/scripts/Game');
 require('./assets/scripts/Gamebeifen');
+require('./assets/scripts/MainBtn');
 require('./assets/scripts/MainHotel');
 require('./assets/scripts/Other');
 require('./assets/scripts/Player');

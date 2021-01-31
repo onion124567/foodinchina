@@ -5,6 +5,7 @@
 export default class Director{
     static  GUIDE_MODE=1;//引导模式 考虑是否加提示标
     static  EDIT_MODE=0;//编辑模式，家具带碰撞体积，可删除摆放
+    //游戏所进行的时间
     static day=0;
     //夜晚 试做新菜或 重新钻研旧菜，每个厨师每夜可执行一个，可有另一厨师协助.
     // 菜做好后会放到厨师的装备栏里，每个厨师可装备3个菜

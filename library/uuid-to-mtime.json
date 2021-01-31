@@ -530,13 +530,13 @@
     "relativePath": "mikado_outline_shadow.fnt"
   },
   "5dcd99cb-77a4-4c95-a7d8-4b5b45295ae5": {
-    "asset": 1612064120008,
-    "meta": 1612064120016,
+    "asset": 1612095577081,
+    "meta": 1612095577090,
     "relativePath": "game.fire"
   },
   "51b0ea7f-a166-4130-bf0b-7f70fc60cb1d": {
-    "asset": 1612063888143,
-    "meta": 1612065412110,
+    "asset": 1612095534784,
+    "meta": 1612095630515,
     "relativePath": "scripts"
   },
   "4644fd26-d96b-4005-8472-fa99fa74e686": {
@@ -550,8 +550,8 @@
     "relativePath": "Star.prefab"
   },
   "f2bd42d3-db89-4efd-b925-6233e5f0d525": {
-    "asset": 1612063244176,
-    "meta": 1612065412174,
+    "asset": 1612092844409,
+    "meta": 1612095630516,
     "relativePath": "textures"
   },
   "0f0d9bf9-c718-4ab0-bd20-f7a4bfe5909c": {
@@ -700,13 +700,23 @@
     "relativePath": "textures\\cookercard.prefab"
   },
   "92036802-91b9-48b3-b1ec-e8b981058210": {
-    "asset": 1612063703624,
-    "meta": 1612063703727,
+    "asset": 1612092629965,
+    "meta": 1612092630115,
     "relativePath": "scripts\\Director.js"
   },
+  "b1bc28a8-bcc2-47eb-9d1c-ee9be8e66b70": {
+    "asset": 1612092844404,
+    "meta": 1612092844409,
+    "relativePath": "textures\\mainbtn.prefab"
+  },
   "4e12f2d2-42ed-4bf8-a57a-426c4389abd4": {
-    "asset": 1612063888141,
-    "meta": 1612065412173,
+    "asset": 1612095920731,
+    "meta": 1612095923807,
     "relativePath": "scripts\\Game.js"
+  },
+  "0c6308de-fe5e-40ba-a67d-ec7ea6daa712": {
+    "asset": 1612095995549,
+    "meta": 1612096001344,
+    "relativePath": "scripts\\MainBtn.js"
   }
 }

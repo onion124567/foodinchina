@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Bg_luckydraw",
+    "texture": "1e740ecc-9041-4463-8919-3a7cfad8db4f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      356,
+      598
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      356,
+      598
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

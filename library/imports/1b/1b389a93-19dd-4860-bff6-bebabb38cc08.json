@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "AddChafs",
+    "texture": "28a795da-e48f-4f3f-9006-3eae75ea456c",
+    "atlas": "",
+    "rect": [
+      24,
+      3,
+      72,
+      114
+    ],
+    "offset": [
+      -4,
+      4
+    ],
+    "originalSize": [
+      128,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -2,8 +2,6 @@ cc.Class({
     extends: cc.Component,
     
     properties: {
-      picNum:"181",
-      isCheck:false,
         sprite: {
           default: null,
           type: cc.SpriteFrame,
@@ -37,10 +35,10 @@ cc.Class({
       let self=this;
         cc.resources.load("pokers", cc.SpriteAtlas, function (err, atlas) {
          
-          // var frame = atlas.getSpriteFrame(self.picNum);
+          var frame = atlas.getSpriteFrame(self.picNum);
         
           // console.log('onion==='+self.getComponent(cc.Sprite));
-          // self.getComponent(cc.Sprite).spriteFrame =frame
+          self.getComponent(cc.Sprite).spriteFrame =frame
           // this.spriteFrame= frame;
       });
     },

@@ -31,10 +31,10 @@ cc.Class({
     // cc.systemEvent.on();
     this.node.on("mousedown", this.onMouseDown, this);
     var self = this;
-    cc.resources.load("pokers", cc.SpriteAtlas, function (err, atlas) {
-      var frame = atlas.getSpriteFrame(self.picNum); // console.log('onion==='+self.getComponent(cc.Sprite));
-
-      self.getComponent(cc.Sprite).spriteFrame = frame; // this.spriteFrame= frame;
+    cc.resources.load("pokers", cc.SpriteAtlas, function (err, atlas) {// var frame = atlas.getSpriteFrame(self.picNum);
+      // console.log('onion==='+self.getComponent(cc.Sprite));
+      // self.getComponent(cc.Sprite).spriteFrame =frame
+      // this.spriteFrame= frame;
     });
   },
   onDestroy: function onDestroy() {

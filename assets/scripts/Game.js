@@ -26,41 +26,82 @@ cc.Class({
             default: null,
             type: cc.Layout,
         },
-        mainbtn: {
+        outerMenu: {
+            default: null,
+            type: cc.Button,
+        },
+        helpMenu: {
+            default: null,
+            type: cc.Button,
+        },
+        customPrefab: {
             default: null,
             type: cc.Prefab
         },
+        floor1:{
+            default: null,
+            type: cc.Layout,
+        },
+        floor2:{
+            default: null,
+            type: cc.Layout,
+        },
+        floor3:{
+            default: null,
+            type: cc.Layout,
+        },
+        floor4:{
+            default: null,
+            type: cc.Layout,
+        }
     },
 
     onLoad: function () {
         self=this;
         this.menuView.node.on('click', this.menuCallback, this);
-        this.menuList.node.active=false;
+        this.helpMenu.node.on('click', this.helperClick, this);
+        this.outerMenu.node.on('click', this.outerClick, this);
+            // 这里的 this 指向 component
+            this.customEntry(this.floor1.node,this.floor1.node.width,this.floor1.node.width);
+            this.customEntry(this.floor1.node,this.floor1.node.width,this.floor1.node.width/2);
     },
     menuCallback:function(){
         if(this.menuList.node.active){
             this.menuList.node.active=false;
         }else {
-            let  menu=cc.instantiate(this.mainbtn);
-            // let label=menu.getComponent('Button');
-
-            let components=menu.children;
-            for(let item of components){
-                console.log("onion","menuCallBack"+item.getComponent('Button'));
-            }
-
-            // label.string="外出";
-            this.menuList.node.addChild(menu);
-
-            menu.node.on('click',this.outerClick,this);
             this.menuList.node.active=true;
         }
 
+    },
+    customEntry:function(floorNode,orgLocation,distance){
+        let newCustom = cc.instantiate(this.customPrefab);
+        // 将新增的节点添加到 Canvas 节点下面
+        floorNode.addChild(newCustom);
+        newCustom.setPosition(cc.v2(orgLocation-50, -50));
+        this.schedule(function() {
+            this.move(newCustom,distance);
+        }, 5);
+
+    },
+    move:function(node,distance){
+        // 创建一个移动动作
+        let seq = cc.repeat(
+            cc.sequence(
+                cc.moveBy(2,  -distance, 50),
+                cc.moveBy(2,distance, -50)
+            ), 2);
+
+
+// 执行动作
+        node.runAction(seq);
+// 停止一个动作
+//         node.stopAction(action);
     },
     /**
      * 外出 切换场景
      */
     outerClick:function(){
+        cc.director.loadScene('outerchoice');
 
     },
     /**

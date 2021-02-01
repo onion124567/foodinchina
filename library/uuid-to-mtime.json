@@ -530,19 +530,14 @@
     "relativePath": "mikado_outline_shadow.fnt"
   },
   "5dcd99cb-77a4-4c95-a7d8-4b5b45295ae5": {
-    "asset": 1612095577081,
-    "meta": 1612184707983,
+    "asset": 1612188939554,
+    "meta": 1612188939565,
     "relativePath": "game.fire"
   },
   "51b0ea7f-a166-4130-bf0b-7f70fc60cb1d": {
     "asset": 1612184707414,
     "meta": 1612184708052,
     "relativePath": "scripts"
-  },
-  "4644fd26-d96b-4005-8472-fa99fa74e686": {
-    "asset": 1526930962000,
-    "meta": 1612184708730,
-    "relativePath": "scripts\\Star.js"
   },
   "3ccd5b0c-fd42-4360-8b3d-30e9cd933e6d": {
     "asset": 1612184708733,
@@ -569,35 +564,20 @@
     "meta": 1612184708750,
     "relativePath": "textures\\star.png"
   },
-  "e80ae345-9dd0-42d8-9277-afee80129849": {
-    "asset": 1612184707922,
-    "meta": 1612184707922,
-    "relativePath": "card.prefab"
-  },
   "015db37b-e411-4c8b-b7ac-3b1427f32590": {
     "asset": 1604328107530,
     "meta": 1612184708051,
     "relativePath": "resources\\pokers.png"
   },
-  "6c688bfb-d907-4e29-a982-1824fec5a01d": {
-    "asset": 1604410747627,
-    "meta": 1612184708632,
-    "relativePath": "scripts\\Player.js"
-  },
   "12bb5849-18b0-4134-b8ee-3a3377e7c82a": {
-    "asset": 1612184707989,
-    "meta": 1612184707989,
-    "relativePath": "porker.prefab"
+    "asset": 1612186496795,
+    "meta": 1612186496795,
+    "relativePath": "cooker.prefab"
   },
   "5fff5e61-4874-4a80-99a4-4b273579ed73": {
     "asset": 1612002823454,
     "meta": 1612184707990,
     "relativePath": "resources"
-  },
-  "a33bd0cc-9cd2-4f3a-878a-f72036662b86": {
-    "asset": 1604827216539,
-    "meta": 1612184708351,
-    "relativePath": "scripts\\Card.js"
   },
   "637dc17b-38e0-4a25-baf6-6c716b7c5a10": {
     "asset": 1611459331288,
@@ -626,8 +606,8 @@
   },
   "0c00cb30-e745-4aa1-8d76-e5aa78f11b88": {
     "asset": 1612063273390,
-    "meta": 1612184707925,
-    "relativePath": "cooker.fire"
+    "meta": 1612185540745,
+    "relativePath": "kitchen.fire"
   },
   "28a795da-e48f-4f3f-9006-3eae75ea456c": {
     "asset": 1612001897400,
@@ -709,11 +689,6 @@
     "meta": 1612184708739,
     "relativePath": "textures\\mainbtn.prefab"
   },
-  "4e12f2d2-42ed-4bf8-a57a-426c4389abd4": {
-    "asset": 1612184690492,
-    "meta": 1612184708465,
-    "relativePath": "scripts\\Game.js"
-  },
   "0c6308de-fe5e-40ba-a67d-ec7ea6daa712": {
     "asset": 1612096049557,
     "meta": 1612184708578,
@@ -723,5 +698,30 @@
     "asset": 1612184690491,
     "meta": 1612184708369,
     "relativePath": "scripts\\CookerBean.js"
+  },
+  "4044445a-e6e5-4b94-bfa2-d8da9ec46fa6": {
+    "asset": 1612186466695,
+    "meta": 1612186466699,
+    "relativePath": "customer.prefab"
+  },
+  "a33bd0cc-9cd2-4f3a-878a-f72036662b86": {
+    "asset": 1612186548982,
+    "meta": 1612186553226,
+    "relativePath": "scripts\\Card.js"
+  },
+  "3667c130-0681-4200-a9e4-36eedbe59fb7": {
+    "asset": 1612187716228,
+    "meta": 1612187716229,
+    "relativePath": "floor.prefab"
+  },
+  "a119ddca-c134-45df-bccc-b185db08a2f3": {
+    "asset": 1612187309915,
+    "meta": 1612187368543,
+    "relativePath": "scripts\\Custom.js"
+  },
+  "4e12f2d2-42ed-4bf8-a57a-426c4389abd4": {
+    "asset": 1612188530362,
+    "meta": 1612188530995,
+    "relativePath": "scripts\\Game.js"
   }
 }

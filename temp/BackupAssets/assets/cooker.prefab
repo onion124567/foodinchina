@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "card",
+    "_name": "porker",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -39,8 +39,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 440,
-      "height": 678
+      "width": 72,
+      "height": 114
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -58,9 +58,9 @@
         0,
         0,
         1,
-        0.338,
-        0.313,
-        0.455
+        0.7,
+        0.7,
+        1
       ]
     },
     "_eulerAngles": {
@@ -92,7 +92,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "4802fcd1-ce6f-4d57-b61a-deaf5bcf8e8c"
+      "__uuid__": "1b389a93-19dd-4860-bff6-bebabb38cc08"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -116,6 +116,9 @@
       "__id__": 1
     },
     "_enabled": true,
+    "picNum": "032",
+    "isCheck": false,
+    "sprite": null,
     "_id": ""
   },
   {
@@ -124,9 +127,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "12bb5849-18b0-4134-b8ee-3a3377e7c82a"
     },
-    "fileId": "78osE4VqZFeJjt2E76AkVN",
+    "fileId": "21QDHR/sBGSoF8rNM8qW3I",
     "sync": false
   }
 ]

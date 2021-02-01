@@ -24,8 +24,8 @@ var Director = /*#__PURE__*/function () {
   //夜晚 试做新菜或 重新钻研旧菜，每个厨师每夜可执行一个，可有另一厨师协助.
   // 菜做好后会放到厨师的装备栏里，每个厨师可装备3个菜
   //准备阶段,调整厨师，经营计划，服务员数量，培训等
-  //经营阶段,每天有6个抉择，可在店内帮工/监工，可出外采购，试吃学习菜谱，可挖掘食材，
-  // 也能碰到广告、厨师争霸及卫生检查等消息
+  //经营阶段店内,每天有6个抉择，可在店内帮工/监工
+  //可采购、试吃、挖掘食材、闲逛、海边等等 也能碰到广告、厨师争霸及卫生检查等消息
   //关店阶段，经营结束后，出若干随机事件，跳槽，卫生检查，客人找茬等信息，多为告知类
   function Director() {
     this.status = null;
@@ -38,13 +38,28 @@ var Director = /*#__PURE__*/function () {
 
     switch (this.status) {
       case Director.STATUS_NIGHT:
+        Director.operateCount = 6;
         break;
 
       case Director.STATUS_READY:
         break;
 
       case Director.STATUS_BUSSINESS:
+        Director.operateCount--;
+
+        if (Director.operateCount === 0) {
+          this.status = Director.STATUS_CLOSE;
+        }
+
         break;
+
+      case Director.STATUS_OUTER:
+        Director.operateCount--;
+
+        if (Director.operateCount === 0) {
+          this.status = Director.STATUS_CLOSE;
+          cc.director.loadScene('game');
+        }
 
       case Director.STATUS_CLOSE:
         break;
@@ -54,11 +69,26 @@ var Director = /*#__PURE__*/function () {
 
   _proto.saveData = function saveData() {
     var userData = {
-      operateCount: operateCount,
+      operateCount: Director.operateCount,
       day: 1,
       coin: 100,
       cookerList: [],
-      popular: 100
+      popular: 100 //人气值
+
+    };
+    var sceneData = {
+      floor: 1,
+      sceneList: [{
+        name: "大吊灯",
+        pic: "xxx.png",
+        type: 1,
+        locationX: 2,
+        floor: 1,
+        area: 1,
+        //占地面积 同type互斥
+        influence: 4 //影响范围
+
+      }]
     };
     cc.sys.localStorage.setItem('userData', JSON.stringify(userData));
   } //游戏启动调用
@@ -80,7 +110,8 @@ Director.coin = 0;
 Director.STATUS_NIGHT = 1;
 Director.STATUS_READY = 2;
 Director.STATUS_BUSSINESS = 3;
-Director.STATUS_CLOSE = 4;
+Director.STATUS_OUTER = 4;
+Director.STATUS_CLOSE = 5;
 module.exports = exports["default"];
 
 cc._RF.pop();

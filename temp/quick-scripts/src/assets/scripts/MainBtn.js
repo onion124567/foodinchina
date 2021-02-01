@@ -19,23 +19,22 @@ cc.Class({
     // sp.spriteFrame = cardPic;
     // node.parent = this.node;
   },
-  setPicNum: function setPicNum(picNum) {
-    console.log("onion setPicNum" + picNum);
-    this.picNum = picNum;
-  },
   // update: function (dt) {
   // },
-  onLoad: function onLoad() {
-    // add key down and key up event
+  onLoad: function onLoad() {// add key down and key up event
     // let picNum=this.game.getPicNum();
     // cc.systemEvent.on();
-    this.node.on("mousedown", this.onMouseDown, this);
-    var self = this;
-    cc.resources.load("pokers", cc.SpriteAtlas, function (err, atlas) {
-      var frame = atlas.getSpriteFrame(self.picNum); // console.log('onion==='+self.getComponent(cc.Sprite));
-
-      self.getComponent(cc.Sprite).spriteFrame = frame; // this.spriteFrame= frame;
-    });
+    // this.node.on("mousedown", this.onMouseDown,this);
+    //
+    // let self=this;
+    // cc.resources.load("pokers", cc.SpriteAtlas, function (err, atlas) {
+    //
+    //     var frame = atlas.getSpriteFrame(self.picNum);
+    //
+    //     // console.log('onion==='+self.getComponent(cc.Sprite));
+    //     self.getComponent(cc.Sprite).spriteFrame =frame
+    //     // this.spriteFrame= frame;
+    // });
   },
   onDestroy: function onDestroy() {
     // cc.systemEvent.off("mousedown", this.onMouseDown);

@@ -26,14 +26,36 @@ cc.Class({
       type: cc.Button
     }
   },
-  start: function start() {// var node = new cc.Node('Sprite');
+  start: function start() {
+    // var node = new cc.Node('Sprite');
     // var sp = node.addComponent(cc.Sprite);
     // sp.spriteFrame = cardPic;
     // node.parent = this.node;
-  },
-  setPicNum: function setPicNum(picNum) {
-    console.log("onion setPicNum" + picNum);
-    this.picNum = picNum;
+    var cooker = {
+      "name": "李大嘴",
+      "lv": 1,
+      "talent": {
+        "id": 1,
+        "name": "吝啬鬼",
+        "describe": "买菜九八折"
+      },
+      "attribute": [{
+        "steam": 16
+      }, {
+        "fry": 18
+      }, {
+        "cut": 12
+      }, {
+        "boil": 22
+      }, {
+        "noodles": 14
+      }],
+      "foodlist": [{
+        "id": 1,
+        "name": "西红柿炒蛋",
+        "value": 1.6
+      }]
+    };
   },
   // update: function (dt) {
   // },
